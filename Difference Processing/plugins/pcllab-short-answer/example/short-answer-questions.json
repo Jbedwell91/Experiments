@@ -1,0 +1,31 @@
+{
+    "label1": [
+      {"question" :"Which parts of the Earth receive the most heat from the Sun?",
+        "type" : "V",
+        "answer": "mantle",        
+        "word_bank": ["manle", "crust", "core", "fire", "someone else"]
+      },
+      {"question" :"When is hurricane season?", "type" : "V"},
+      {"question" :"Unequal heating to the Earth causes what type of air movement?", "type" : "V"},
+      {
+        "question" :"Water <u>condenses</u> on ________ to form clouds. Fill in the blank.",
+        "type" : "V",
+        "answer": "surface",
+        "filled_question": "Water condenses on <u>surface</u> to form clouds."},
+      {"question" :"What causes wind?", "type" : "V"}
+      ],
+
+    "label2":[
+      {"question" :"The lungs are the main organs of which system in the body?", "type" : "V"},
+      {"question" :"While you are breathing, our lungs inflate or puff up. What is this process?", "type" : "V"},
+      {"question" :"Which type of cells release sticky mucus in your nose and airway?", "type" : "V"},
+      {"question" :"What tiny, hair-like structures cover the inside of the airway?", "type" : "V"},
+      {"question" :"The process that occurs when there is less space in the lungs is what?", "type" : "V"},
+      {"question" :"What are the muscles that do the work of inhaling and exhaling?", "type" : "V"},
+      {"question" :"Why do we cough?", "type" : "V"},
+      {"question" :"Why is it important to have nose hairs?", "type" : "I"},
+      {"question" :"When a person inhales cigarette smoke, they damage their cilia. Why might this make it harder to breathe?", "type" : "I"},
+      {"question" :"Polio is a disease that can paralyse, or stop the movement of, the muscles in the chest. If someone has polio why would they not be able to breathe on their own?", "type" : "A"},
+      {"question" :"Imagine you are in an environment with dust in the air. Describe how your respiratory system would react.", "type" : "A"}
+      ]
+}

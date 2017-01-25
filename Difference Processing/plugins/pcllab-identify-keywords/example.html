@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <base href="../../" target="_blank">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/jspsych.css">
+        <link rel="stylesheet" href="css/pcllab-plugins.css">
+
+        <!-- jQuery first, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Then jsPsych -->
+        <script src="jspsych.js"></script>
+
+        <!-- Plugins -->
+        <script src="plugins/pcllab-identify-keywords/plugin.js"></script>
+
+        <title>pcllab-identify-keywords</title>
+    </head>
+    <body>
+        <div id="experiment_container"></div>
+
+        <script>
+        var trial = {
+            type: 'pcllab-identify-keywords',
+            title: "Earth's Crust",
+            text: "How well do you think you could answer a question about what the crust is?",
+            minimum_time: 3500
+        };
+        var trial2 = {
+            title: "Earth's Crust",
+            type: 'pcllab-identify-keywords',
+            text: [
+                ["Section 1", "How well do you think you could answer a question about what the crust is?"],
+                ["Section 1", "How well do you think you could answer a question about what the crust is?"],
+                ["Section 1", "How well do you think you could answer a question about what the crust is?"],
+                ["Section 1", "How well do you think you could answer a question about what the crust is?"],
+                ["Section 1", "How well do you think you could answer a question about what the crust is?"],
+                ["Section 1", "How well do you think you could answer a question about what the crust is?"],
+                ["Section 2", "How well do you think you could answer a question about what the crust is?"]
+            ],
+            minimum_time: 3500
+        };
+
+        jsPsych.init({
+            display_element: $("div#experiment_container"),
+            timeline: [trial, trial2],
+            on_finish: function () {
+                jsPsych.data.displayData();
+            }
+        })
+        </script>
+    </body>
+</html>
