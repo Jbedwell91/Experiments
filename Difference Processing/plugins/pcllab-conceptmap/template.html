@@ -1,0 +1,42 @@
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+<link rel="stylesheet" href="plugins/pcllab-conceptmap/css/normalize.css">
+<link rel="stylesheet" href="plugins/pcllab-conceptmap/css/main.css">
+
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="plugins/pcllab-conceptmap/lib/jquery.min.js"></script>
+<script src="plugins/pcllab-conceptmap/lib/jquery-ui.min.js"></script>
+<script src="plugins/pcllab-conceptmap/lib/jquery.skip.js"></script>
+<script src="plugins/pcllab-conceptmap/lib/ocanvas-2.8.1.js"></script>
+
+<div id="left-card">
+    <h1 class="content-title"></h1>
+
+    <div class="content">
+    </div>
+    <div class="error"></div>
+    <div class="left-buttons">
+        <div class="finish">Done</div>
+    </div>
+</div>
+
+<div id="right-card">
+
+    <div class="canvas-holder">
+        <canvas width="500" height="500" id="canvas" class="canvas" tabindex="1"></canvas>
+    </div>
+
+    <div class="word-elem">
+        <input type="text" class="editable-word" onkeydown="editKeyChange()" onkeypress="editKeyChange()" onkeyup="editKeyChange()">
+    </div>
+</div>
+
+
+<script src="plugins/pcllab-conceptmap/js/ConceptMap.js"></script>
+<script src="plugins/pcllab-conceptmap/js/Node.js"></script>
+<script src="plugins/pcllab-conceptmap/js/Connection.js"></script>
+<script src="plugins/pcllab-conceptmap/js/Grade.js"></script>
+<script src="plugins/pcllab-conceptmap/js/map.js"></script>
