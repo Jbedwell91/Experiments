@@ -1,0 +1,37 @@
+{
+    "label1": [
+      {"question" :"<center><font size =6>Deltoid Muscle -- Function</font size =6></center>", "type" : "V"}
+      ],
+    
+    "label2":[
+      {"question" :"<center><font size =6>Deltoid Muscle -- Innervation</font size =6></center>", "type" : "V"}
+      ],
+
+     "label3":[
+      {"question" :"<center><font size =6>Deltoid Muscle -- Location</font size =6></center>", "type" : "V"}
+      ],
+
+      "label4":[
+      {"question" :"<center><font size =6>Digital Flexor Muscles -- Function</font size =6></center>", "type" : "V"}
+      ],
+
+       "label5":[
+      {"question" :"<center><font size =6>Digital Flexor Muscles -- Innervation</font size =6></center>", "type" : "V"}
+      ],
+
+        "label6":[
+      {"question" :"<center><font size =6>Digital Flexor Muscles -- Location</font size =6></center>", "type" : "V"}
+      ],
+
+         "label7":[
+      {"question" :"<center><font size =6>Triceps Muscle -- Function</font size =6></center>", "type" : "V"}
+      ],
+
+          "label8":[
+      {"question" :"<center><font size =6>Triceps Muscle -- Innervation</font size =6></center>", "type" : "V"}
+      ],
+
+           "label9":[
+      {"question" :"<center><font size =6>Triceps Muscle -- Location</font size =6></center>", "type" : "V"}
+      ]
+}

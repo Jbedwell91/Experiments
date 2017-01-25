@@ -1,0 +1,687 @@
+
+<!-- saved from url=(0051)file:///Users/joeybedwell/Downloads/Experiment.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Required meta tags always come first -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./Experiment_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/jspsych.css">
+        <link rel="stylesheet" href="css/pcllab-plugins.css">
+
+        <!-- jQuery first, then Bootstrap JS. -->
+        <script src="./Experiment_files/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="./Experiment_files/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Then jsPsych -->
+        <script src="jspsych.js"></script>
+
+        <!-- Plugins -->
+        <script src="plugins/pcllab-short-answer-text/plugin.js"></script>
+        <script src="plugins/jspsych-survey-multi-choice/plugin.js"></script>
+         <script src="plugins/pcllab-short-answer/pluginj.js"></script>
+        <script src="plugins/pcllab-instructions/plugin.js"></script>
+        <script src="plugins/pcllab-demographics/plugin.js"></script>
+        <script src="plugins/pcllab-study-text/plugin.js"></script>
+        <script src="plugins/pcllab-ratings-slider/plugin.js"></script>
+        <script src="plugins/pcllab-debrief.js"></script>
+        
+
+        <title>Experiment</title>
+    </head>
+    <body>
+        <div id="experiment_container"></div>
+
+        <script>
+
+   var demographics = {
+        type: "pcllab-demographics"
+    };
+
+    var instructions1 = {
+        type: 'pcllab-instructions',
+        label: 'General'
+
+    };
+
+    var instructions2 = {
+        type: 'pcllab-instructions',
+        label: 'Study'
+    };
+
+    var instructions3 = {
+        type: 'pcllab-instructions',
+        label: 'Recall'
+    };
+
+    var instructions4 = {
+        type: 'pcllab-instructions',
+        label: 'Blocked_Scoring'
+    };
+
+    var instructions5 = {
+        type: 'pcllab-instructions',
+        label: 'Finish'
+    };
+
+    var slide = {
+        type: 'pcllab-ratings-slider',
+        instructions_file: "slider.json",
+        label_left: "<b>Not at all Confident</b>",
+        label_right: "<b>Very Confident</b>",
+        button_text: "Continue",
+        display_value: true,
+        hot_and_cold_slider: true
+    };
+
+    var debrief = {
+        type: 'pcllab-debrief',
+        label: 'Debrief'
+    };
+
+    var study1 = {
+        type: 'pcllab-study-text',
+        minimum_time: 1,
+        label: "label1" 
+    };
+
+
+    var study2 = {
+        type: 'pcllab-study-text',
+         minimum_time: 1,
+        label: "label2"
+    };
+
+    var study3 = {
+        type: 'pcllab-study-text',
+         minimum_time: 1,
+        label: "label3"
+    };
+
+    var study4 = {
+        type: 'pcllab-study-text',
+         minimum_time: 1,
+        label: "label4"
+    };
+
+    var study5 = {
+        type: 'pcllab-study-text',
+         minimum_time: 1,
+        label: "label5"
+    };
+
+    var study6 = {
+        type: 'pcllab-study-text',
+         minimum_time: 1,
+        label: "label6"
+    };
+
+    var study7 = {
+        type: 'pcllab-study-text',
+         minimum_time: 1,
+        label: "label7"
+    };
+
+    var study8 = {
+        type: 'pcllab-study-text',
+         minimum_time: 1,
+        label: "label8"
+    };
+
+    var study9 = {
+        type: 'pcllab-study-text',
+         minimum_time: 1,
+        label: "label9"
+    };
+
+     var retrieve1 = {
+        type: 'pcllab-short-answer',
+         minimum_time: 1,
+        show_progress: false,
+        label: "label1"
+    }; 
+
+     var retrieve2 = {
+        type: 'pcllab-short-answer',
+         minimum_time: 1,
+        show_progress: false,
+        label: "label2"
+    }; 
+
+     var retrieve3 = {
+        type: 'pcllab-short-answer',
+         minimum_time: 1,
+        show_progress: false,
+        label: "label3"
+    }; 
+
+     var retrieve4 = {
+        type: 'pcllab-short-answer',
+         minimum_time: 1,
+        show_progress: false,
+        label: "label4"
+    }; 
+
+     var retrieve5 = {
+        type: 'pcllab-short-answer',
+         minimum_time: 1,
+        show_progress: false,
+        label: "label5"
+    }; 
+
+     var retrieve6 = {
+        type: 'pcllab-short-answer',
+         minimum_time: 1,
+        show_progress: false,
+        label: "label6"
+    }; 
+
+     var retrieve7 = {
+        type: 'pcllab-short-answer',
+         minimum_time: 1,
+        show_progress: false,
+        label: "label7"
+    }; 
+
+     var retrieve8 = {
+        type: 'pcllab-short-answer',
+         minimum_time: 1,
+        show_progress: false,
+        label: "label8"
+    }; 
+
+     var retrieve9 = {
+        type: 'pcllab-short-answer',
+         minimum_time: 1,
+        show_progress: false,
+        label: "label9"
+    }; 
+
+     var sim1 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the similarities between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData1();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+      var sim2 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the similarities between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData2();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+       var sim3 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the similarities between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData3();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+     var sim4 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the similarities between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData4();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+      var sim5 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the similarities between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData5();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+      var sim6 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the similarities between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData6();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+         var sim7 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the similarities between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData7();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+       var sim8 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the similarities between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData8();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+     var sim9 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the similarities between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData9();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+    var exp1 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData1();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+      var exp2 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData2();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+        var exp3 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData3();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+        var exp4 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData4();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+        var exp5 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData5();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+        var exp6 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData6();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+        var exp7 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData7();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+        var exp8 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData8();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+        var exp9 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData9();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+                
+    var diff1 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the rationale for your scoring judgment.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData1();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to move the upper arm away from the body</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+  }
+            };
+
+    var diff2 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Innervation </b></font size = 5>",
+         question: "<font size =4><b>Describe the differences between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData2();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Is stimulated by the axillary nerve</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+     }
+            };
+
+    var diff3 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Deltoid Muscle--Location </b></font size = 5>",
+         question: "<font size =4><b>Describe the differences between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData3();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Resides on the side of the upper arm at the shoulder</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+     }
+            };
+
+    var diff4 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Digital Flexor Muscles--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the differences between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData4();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Function together to flex the fingers</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>" 
+     }
+            };
+
+    var diff5 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Digital Flexor Muscles--Innervation </b></font size = 5>",
+         question: "<font size =4><b>Describe the differences between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData5();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Are stimulated by the median and ulnar nerves</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+     }
+            };
+
+    var diff6 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Digital Flexor Muscles--Location </b></font size = 5>",
+         question: "<font size =4><b>Describe the differences between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData6();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Reside on the front of the forearm when the palm is facing forward</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+     }
+            };
+
+    var diff7 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Triceps Muscle--Function </b></font size = 5>",
+         question: "<font size =4><b>Describe the differences between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData7();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Functions to extend the lower arm at the elbow</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+     }
+            };
+
+    var diff8 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Triceps Muscle--Innervation </b></font size = 5>",
+         question: "<font size =4><b>Describe the differences between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData8();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Is stimulated by the radial nerve</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+     }
+            };
+
+    var diff9 = {
+         type: 'pcllab-short-answer-text',
+         text_title: "<b><font size = 5>Triceps Muscle--Location </b></font size = 5>",
+         question: "<font size =4><b>Describe the differences between your answer and the correct answer.</b></font size =4></p>",
+         //text_questions_file: "example.json",
+         vertically_aligned: true,
+         text: function() {
+      var subject_data = getSubjectData9();
+      return "<p align ='left'><p><b><font size =5><p align ='left'>Correct Answer:</b> Resides on the back of the arm</p></p align = 'left'><p align ='left'><p><b><font size =5><p align ='left'>Your Answer:</b> " +  subject_data + "</p></p align = 'left'></font size =5>"
+     }
+            };
+
+    var page_1_questions = ["<font size =5>Was your answer correct, partially correct, or incorrect?</font size =5>"];
+
+
+    var page_1_options = ["<font size =4> Correct</font size =4", "<font size =4> Partially Correct</font size =4>", "<font size =4> Incorrect</font size =4>"];
+
+    var grade1 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData1();
+      return "<font size =5><p><center>Deltoid Muscle -- Function </center></p> <p> <b><font size =5>Correct Answer:</b> Functions to move the upper arm away from the body</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+      var grade2 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData2();
+      return "<font size =5><p><center>Deltoid Muscle -- Innervation </center></p> <p> <b><font size =5>Correct Answer:</b> Is stimulated by the axillary nerve</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade3 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData3();
+      return "<font size =5><p><center>Deltoid Muscle -- Location </center></p> <p><b><font size =5>Correct Answer:</b> Resides on the side of the upper arm at the shoulder</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade4 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData4();
+      return "<font size =5><p><center>Digital Flexor Muscles -- Function </center></p> <p> <b><font size =5>Correct Answer:</b> Function together to flex the fingers</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade5 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData5();
+       return "<font size =5><p><center>Digital Flexor Muscles -- Innervation </center></p> <p> <b><font size =5>Correct Answer:</b> Are stimulated by the median and ulnar nerves</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade6 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData6();
+      return "<font size =5><p><center>Digital Flexor Muscles -- Location </center></p><p><b><font size =5>Correct Answer:</b> Reside on the front of the forearm when the palm is facing forward</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade7 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData7();
+      return "<font size =5><p><center>Triceps Muscle -- Function </center></p> <p> <b><font size =5>Correct Answer:</b> Functions to extend the lower arm at the elbow</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade8 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData8();
+      return "<font size =5><p><center>Triceps Muscle -- Innervation </center></p> <p> <b><font size =5>Correct Answer:</b> Is stimulated by the radial nerve</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+        var grade9 = {
+      type: 'survey-multi-choice',
+      questions: page_1_questions,
+      options: [page_1_options], 
+      preamble: function() {
+      var subject_data = getSubjectData9();
+      return "<font size =5><p><center>Triceps Muscle -- Location </center></p> <p> <b><font size =5>Correct Answer:</b> Resides on the back of the arm</font size =5></p><b>Your Answer:</b> " +  subject_data + "<p></p></font size =5>"
+      }
+      };
+
+            function getSubjectData1() {
+
+    var trials1 = jsPsych.data.getDataByTrialIndex(13);
+
+    return trials1.short_answer_response
+  }
+
+     function getSubjectData2() {
+
+    var trials2 = jsPsych.data.getDataByTrialIndex(14);
+
+    return trials2.short_answer_response
+  }
+
+     function getSubjectData3() {
+
+    var trials3 = jsPsych.data.getDataByTrialIndex(15);
+
+    return trials3.short_answer_response
+  }
+
+     function getSubjectData4() {
+
+    var trials4 = jsPsych.data.getDataByTrialIndex(16);
+
+    return trials4.short_answer_response
+  }
+
+     function getSubjectData5() {
+
+    var trials5 = jsPsych.data.getDataByTrialIndex(17);
+
+    return trials5.short_answer_response
+  }
+
+     function getSubjectData6() {
+
+    var trials6 = jsPsych.data.getDataByTrialIndex(18);
+
+    return trials6.short_answer_response
+  }
+
+     function getSubjectData7() {
+
+    var trials7 = jsPsych.data.getDataByTrialIndex(19);
+
+    return trials7.short_answer_response
+  }
+
+     function getSubjectData8() {
+
+    var trials8 = jsPsych.data.getDataByTrialIndex(20);
+
+    return trials8.short_answer_response
+  }
+
+     function getSubjectData9() {
+
+    var trials9 = jsPsych.data.getDataByTrialIndex(21);
+
+    return trials9.short_answer_response
+  }
+
+            jsPsych.init({
+                display_element: $("div#experiment_container"),
+                timeline: [demographics, instructions1, instructions2, study1, study2, study3, study4, study5, study6, study7, study8, study9, instructions3, retrieve1, retrieve2, retrieve3, retrieve4, retrieve5, retrieve6, retrieve7, retrieve8, retrieve9, instructions4, diff1, grade1, diff2, grade2, diff3, grade3, diff4, grade4, diff5, grade5, diff6, grade6, diff7, grade7, diff8, grade8, diff9, grade9, slide, instructions5],
+                on_finish: function () {
+                    jsPsych.data.displayData();
+                }
+            })
+        </script>
+    
+
+</body></html>

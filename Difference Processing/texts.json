@@ -1,0 +1,39 @@
+{
+
+  "label1": {
+    "title": "Deltoid Muscle -- Function", 
+    "text": "<font size = 6><center>Functions to move the upper arm away from the body</center></font size = 6>"
+  },
+  "label2": {
+    "title": "Deltoid Muscle -- Innervation",
+    "text": "<font size = 6><center>Is stimulated by the axillary nerve</center></font size = 6>"
+  },
+  "label3": {
+    "title": "Deltoid Muscle -- Location",
+    "text": "<font size = 6><center>Resides on the side of the upper arm at the shoulder</center></font size = 6>"
+  },
+  "label4": {
+    "title": "Digital Flexor Muscles -- Function",
+    "text": "<font size = 6><center>Function together to flex the fingers</center></font size = 6>"
+  },
+  "label5": {
+    "title": "Digital Flexor Muscles -- Innervation",
+    "text": "<font size = 6><center>Are stimulated by the median and ulnar nerves</center></font size = 6>"
+  },
+  "label6": {
+    "title": "Digital Flexor Muscles -- Location",
+    "text": "<font size = 6><center>Reside on the front of the forearm when the palm is facing forward</center></font size = 6>"
+  },
+  "label7": {
+    "title": "Triceps Muscle -- Function",
+    "text": "<font size = 6><center>Functions to extend the lower arm at the elbow</center></font size = 6>"
+  },
+  "label8": {
+    "title": "Triceps Muscle -- Innervation",
+    "text": "<font size = 6><center>Is stimulated by the radial nerve</center></font size = 6>"
+  },
+  "label9": {
+    "title": "Triceps Muscle -- Location",
+    "text": "<font size = 6><center>Resides on the back of the arm</center></font size = 6>"
+  }
+}

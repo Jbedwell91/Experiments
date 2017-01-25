@@ -1,0 +1,413 @@
+/* General Stuff */
+
+.pcllab-text-center {
+    text-align: center;
+}
+
+.pcllab-button-center {
+    position: relative;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.pcllab-container-center {
+    position: relative;
+    margin: 0 auto 0;
+    display: block;
+    text-align: center;
+}
+
+.pcllab-default-bottom-margin-medium {
+  margin-bottom: 40px;
+}
+
+.pcllab-default-font-larger {
+  font-size: larger;
+}
+
+.pcllab-default-progress {
+  margin-top: 15px;
+  height: 26px;
+}
+
+.pcllab-default-progressbar {
+  width: 100%;
+}
+
+.pcllab-invisible {
+  visibility: hidden;
+}
+
+/* PCLLAB Ratings Slider */
+
+.pcllab-ratings-slider-instructions {
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+.pcllab-button-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pcllab-ratings-slider-slider {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pcllab-ratings-slider-slider>div {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    width: 20%;
+    white-space: nowrap;
+}
+
+.pcllab-ratings-slider-slider>input {
+    display: flex;
+    color: green;
+}
+
+.pcllab-slider-value {
+    text-align: center;
+}
+
+.pcllab-ratings-school-slider input[type=range] {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.pcllab-ratings-school-slider input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.pcllab-ratings-school-slider input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+
+    background-color: #3251ff; /* Old browsers */
+    background-image: -moz-linear-gradient(left,  #3251ff 0%, #8c9fff 30%, #ffffff 50%, #ffaaaa 70%, #ff0000 100%); /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(left,  #3251ff 0%,#8c9fff 30%,#ffffff 50%,#ffaaaa 70%,#ff0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to right,  #3251ff 0%,#8c9fff 30%,#ffffff 50%,#ffaaaa 70%,#ff0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.pcllab-ratings-school-slider input[type=range]:focus::-webkit-slider-runnable-track {
+    background-color: #3251ff; /* Old browsers */
+    background-image: -moz-linear-gradient(left,  #3251ff 0%, #8c9fff 30%, #ffffff 50%, #ffaaaa 70%, #ff0000 100%); /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(left,  #3251ff 0%,#8c9fff 30%,#ffffff 50%,#ffaaaa 70%,#ff0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to right,  #3251ff 0%,#8c9fff 30%,#ffffff 50%,#ffaaaa 70%,#ff0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.pcllab-ratings-school-slider input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+
+    background-color: #3251ff; /* Old browsers */
+    background-image: -moz-linear-gradient(left,  #3251ff 0%, #8c9fff 30%, #ffffff 50%, #ffaaaa 70%, #ff0000 100%); /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(left,  #3251ff 0%,#8c9fff 30%,#ffffff 50%,#ffaaaa 70%,#ff0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to right,  #3251ff 0%,#8c9fff 30%,#ffffff 50%,#ffaaaa 70%,#ff0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.pcllab-ratings-school-slider input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+
+.pcllab-ratings-school-slider input[type=range]::-ms-fill-lower {
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background-color: cornflowerblue;
+}
+
+.pcllab-ratings-school-slider input[type=range]:focus::-ms-fill-lower {
+    background-color: cornflowerblue;
+}
+
+.pcllab-ratings-school-slider input[type=range]::-ms-fill-upper {
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+
+    background-color: cornflowerblue;
+}
+
+.pcllab-ratings-school-slider input[type=range]:focus::-ms-fill-upper {
+    background-color: cornflowerblue;
+}
+
+.pcllab-ratings-slider-slider input[type=range]::-ms-tooltip {
+    display: none;
+}
+
+.pcllab-ratings-button {
+    margin-top: 20px;
+}
+
+/* PCLLAB Short Answer */
+
+.pcllab-short-answer-response-area {
+  min-width: 40%;
+}
+
+.pcllab-short-answer-continue-btn {
+    margin-right: 15px;
+}
+
+.pcllab-short-answer-question-response-container {
+    float: left;
+}
+
+.pcllab-short-answer-question-response-wordbank-container {
+    clear: both;
+}
+
+.pcllab-short-answer-bank-word-container {
+    min-width: 25%;
+    border: 3px solid #D1D1D1;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.pcllab-short-answer-bank-word-container > ul {
+    list-style-type: none;
+    padding: 4px;
+    margin: 0;
+}
+
+
+.pcllab-short-answer-bank-word-container span:hover {
+    color: #f88;
+    cursor: move;
+}
+
+.pcllab-short-answer-bank-word-selected {
+    color: #f00;
+}
+
+/* PCLLAB Order Reconstruction */
+
+.reconstruction-column-container {
+    display: flex;
+}
+
+.reconstruction-column-container > .reconstruction-column {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+}
+
+.reconstruction-column-container li {
+    padding: 5px;
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid #444444;
+    background-color: #f3f3f3;
+}
+
+.reconstruction-column-container .sortable-chosen {
+    background-color: #E0E0E0;
+}
+
+.reconstruction-column-container .sortable-ghost {
+    opacity: 0.5;
+    border: 0px;
+    padding: 6px;
+}
+
+.reconstruction-column-container .reconstruction-sorted-value-container {
+    border-bottom: 1px solid #444444;
+    padding: 5px;
+    min-height: 50px;
+    height: auto;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.reconstruction-given-values {
+    padding: 15px 20px;
+    min-height: 40px;
+    border: 1px solid #444444;
+}
+
+.reconstruction-given-values > li {
+    margin: 10px 0px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.reconstruction-divider {
+    flex: 1;
+}
+
+.reconstruction-sorted-container {
+    flex-direction: row;
+    display: flex;
+}
+.reconstruction-sorted-container > p {
+    margin-top: 10px;
+    flex: 1;
+    text-align: center;
+}
+.reconstruction-sorted-container > ul {
+    flex: 10;
+}
+
+.reconstruction-sorted-value-container > .ui-sortable-placeholder {
+    display: none; !important
+}
+
+/* PCLLAB Multi List Sorting */
+
+.multilist-given-values {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding: 15px 20px;
+    min-height: 40px;
+    border: 1px solid #444444;
+    width: 100%;
+}
+
+.multilist-given-values li {
+    flex-basis: 24%;
+    padding: 5px;
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid #444444;
+    background-color: #f3f3f3;
+    margin: 10px 0px;
+}
+
+.multilist-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.multilist-list-container > div {
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+}
+
+.multilist-list-container ol {
+    border: 1px solid #444444;
+    min-height: 100px;
+    padding: 4px;
+    list-style-type: decimal;
+}
+
+
+.multilist-list-container ol > li {
+    border: 1px solid #444444;
+    background-color: #f3f3f3;
+    margin: 10px 5px 10px 20px;
+}
+
+.multilist-given-values .ui-sortable-placeholder, .multilist-list-container .ui-sortable-placeholder {
+    visibility: visible !important;
+    background-color: lightgreen;
+}
+
+.multilist-list-container .ui-sortable-placeholder {
+    margin: 10px 5px 10px 20px;
+}
+
+/* PCLLAB Free Recall List */
+span.pcllab-free-recall-list-word:hover {
+  cursor: pointer;
+}
+
+/* PCLLAB Short Answer Text */
+
+.pcllab-sat-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pcllab-sat-container.pcllab-sat-vert {
+    flex-direction: column;
+}
+
+.pcllab-sat-text {
+    flex-basis: 58%;
+    border: 1px solid #000000;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    background-color: lightgray;
+    height: 500px;
+}
+
+.pcllab-sat-vert .pcllab-sat-text {
+    max-height: 250px;
+    margin-bottom: 15px;
+}
+
+.pcllab-sat-textbox {
+    border: 1px solid #000000;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.pcllab-sat-question {
+    flex-basis: 38%;
+    border: 1px solid #000000;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    background-color: lightgray;
+    height: 500px;
+}
+
+.pcllab-sat-vert .pcllab-sat-question {
+    max-height: 250px;
+    margin-bottom: 15px;
+}
+
+.pcllab-sat-question textarea {
+    background-color: white;
+    border: 1px solid #000000;
+    resize: none;
+    width: 100%;
+}
+
+.pcllab-sat textarea, .pcllab-sat .pcllab-sat-text div {
+    height: 88%;
+}
+
+.pcllab-sat-vert textarea, .pcllab-sat-vert .pcllab-sat-text div {
+    height: 75%;
+}
