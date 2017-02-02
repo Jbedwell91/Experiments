@@ -1,0 +1,107 @@
+
+<!-- saved from url=(0051)file:///Users/joeybedwell/Downloads/Experiment.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Required meta tags always come first -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./Experiment_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/jspsych.css">
+        <link rel="stylesheet" href="css/pcllab-plugins.css">
+
+        <!-- jQuery first, then Bootstrap JS. -->
+        <script src="./Experiment_files/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="./Experiment_files/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Then jsPsych -->
+        <script src="jspsych.js"></script>
+
+        <!-- Plugins -->
+        <script src="plugins/pcllab-instructions/plugin.js"></script>
+        <script src="plugins/pcllab-demographics/plugin.js"></script>
+        <script src="plugins/pcllab-study-text/plugin.js"></script>
+        <script src="plugins/pcllab-ratings-slider/plugin.js"></script>
+        <script src="plugins/pcllab-free-recall-text/plugin.js"></script>
+        
+
+        <title>Experiment</title>
+    </head>
+    <body>
+        <div id="experiment_container"></div>
+
+        <script>
+
+   var demographics = {
+        type: "pcllab-demographics"
+    };
+
+    var instructions1 = {
+        type: 'pcllab-instructions',
+        label: 'General'
+
+    };
+
+    var instructions2 = {
+        type: 'pcllab-instructions',
+        label: 'Study'
+    };
+
+    var instructions3 = {
+        type: 'pcllab-instructions',
+        label: 'Recall'
+    };
+
+    var instructions4 = {
+        type: 'pcllab-instructions',
+        label: 'Blocked_Scoring'
+    };
+
+    var instructions5 = {
+        type: 'pcllab-instructions',
+        label: 'Finish'
+    };
+
+    var slide = {
+        type: 'pcllab-ratings-slider',
+        instructions_file: "slider.json",
+        label_left: "<b>Not at all Confident</b>",
+        label_right: "<b>Very Confident</b>",
+        button_text: "Continue",
+        display_value: true,
+        hot_and_cold_slider: true
+    };
+
+    var text1 = {
+        type: 'pcllab-study-text',
+        minimum_time: 1000 * 10,
+        auto_advance: true,
+        label: "label1" 
+    };
+
+     var text2 = {
+        type: 'pcllab-study-text',
+        minimum_time: 1000 * 15,
+        auto_advance: true,
+        label: "label2" 
+    };
+
+    var recall = {
+        type: 'pcllab-free-recall-text',
+        minimum_time: 1000 * 480,
+        title: "Tropisms"
+    }
+
+            jsPsych.init({
+                display_element: $("div#experiment_container"),
+                timeline: [text1, text2, recall],
+                on_finish: function () {
+                    jsPsych.data.displayData();
+                }
+            })
+        </script>
+    
+
+</body></html>
