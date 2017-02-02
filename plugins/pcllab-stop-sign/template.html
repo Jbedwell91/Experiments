@@ -1,0 +1,45 @@
+<style type="text/css">
+
+    /* Title */
+    .pcllab-stop-sign-title {
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Auto expand to image height */
+    #experiment_container {
+        height: auto;
+    }
+
+    .pcllab-stop-sign-img {
+        margin: 0 auto;;
+        width: 80%;
+        margin: 0px 10%;
+    }
+
+    /* Using absolute object for button below */
+    .pcllab-stop-sign {
+        position: relative;
+    }
+
+    /* Default do no display, horizontal position and width is percent wise,
+     * but height is pixel wise. May be slightly off on really tiny screens */
+    .pcllab-stop-sign-hidden-btn {
+        position: absolute;
+        height: 250px;
+        width: 15%;
+        left: 50%;
+        top: 190px;
+        cursor: pointer;
+        display: none;
+    }
+
+</style>
+
+<div class="pcllab-stop-sign">
+    <img class="pcllab-stop-sign-img" src="plugins/pcllab-stop-sign/stop.png" alt="Please wait."/>
+
+    <div class="pcllab-stop-sign-hidden-btn"></div>
+    <h1 class="pcllab-stop-sign-title"></h1>
+</div>

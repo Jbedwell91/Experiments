@@ -1,0 +1,98 @@
+<style type="text/css">
+
+    #experiment_container {
+        min-height: 60%;
+        height: auto;
+    }
+
+    /* Title */
+    .pcllab-identify-keywords-title {
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Don't let user select text (prevents selection when clicking) */
+    .pcllab-identify-keywords-text {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 5px solid rgba(255,255,255,0);
+        border-width: 0 0 0 7px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 60%;
+        height: 450px;
+        float: left;
+        overflow-y: scroll;
+        overflow-x: auto;
+    }
+
+    .pcllab-identify-keywords-wordbank-container {
+        width: 35%;
+        float: right;
+        height: 450px;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        transition: all 0.2s ease;
+    }
+
+    .pcllab-identify-keywords-wordbank-container:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        background-color: #ECEFF1;
+    }
+
+    .pcllab-identify-keywords-wordbank {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 100%;
+        height: 413px;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    /* Class for each word */
+    .pcllab-identify-keywords-word {
+        transition: color 0.15s ease;
+    }
+
+    .pcllab-identify-keywords-word:hover {
+        cursor: pointer;
+        color: #f88;
+    }
+
+    /* Class for when word is selected */
+    .pcllab-identify-keywords-word-selected {
+        color: #f00 !important;
+    }
+	
+</style>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<div class="pcllab-identify-keywords">
+    <h1 class="pcllab-identify-keywords-title"></h1>
+    <p class="pcllab-identify-keywords-text"></p>
+
+    <div class="pcllab-identify-keywords-wordbank-container">
+        <p style="position:relative; top: 5px; font-weight: bold">Key Terms</p>
+        <div class="pcllab-identify-keywords-wordbank"></div>
+    </div>
+
+    <div style="width: 100%; text-align: center; clear:both; padding-top: 35px">
+        <div class="progress" style="margin-top: 15px; height: 26px;">
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuenow="100" aria-valuemax="100" style="width: 100%"></div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg pcllab-button-center" style="display: none">Continue</button>
+        </div>
+    </div>
+</div>
